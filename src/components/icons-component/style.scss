@@ -1,0 +1,30 @@
+@import "../../assets/style/variabless.scss";
+@import "../../assets/style/mixin.scss";
+
+.P-icons {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    span{
+      background-color: $white;
+      width: 22px;
+      height: 22px;
+
+    }
+
+    
+    .P-icon-fb {
+      font-size: 20px;
+       
+      @include screen-max-width-767 {
+        font-size: 16px;
+      }
+
+      @include screen-max-width-576 {
+        font-size: 13px;
+      }
+    }
+  }

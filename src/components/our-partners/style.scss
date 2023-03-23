@@ -1,0 +1,67 @@
+@import '../../assets/style/variabless';
+@import '../../assets/style/mixin';
+@import "../../assets/style/fonts";
+
+.P-our-partners{
+    font-size: $font-size-95;
+    font-weight: 700;
+    margin: 50px 0;
+    font-family: $Regular;
+    @include screen-max-width-991{
+        font-size: $font-size-70;
+        margin: 40px 0;
+    } 
+    @include screen-max-width-767{
+        font-size: $font-size-50;
+        margin: 25px 0;
+    } 
+    @include screen-max-width-576{
+        font-size: $font-size-40;
+      margin: 15px 0;
+    } 
+
+
+}
+.P-partners-slid{
+    padding-bottom: 100px;
+
+    .P-partner-img-list{
+        width:292px ;
+        height: 260px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #999999;
+
+        @include screen-max-width-1200{
+    border: none;
+        }
+      
+    .P-partner-img{
+        position: absolute;
+        width: 203px;
+        height: 240px;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+
+    }
+}   
+    .slick-slider{
+        .slick-prev{
+            display: none;
+            .P-arrow-slider-prev{
+                display: none;
+            }
+            .P-arrow-slider-next {
+                display: none;
+            }
+
+        }
+
+
+        }
+        }

@@ -1,0 +1,72 @@
+@import "../../assets/style/variabless";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+.validation{
+  font-family: $Regular;
+  .validation-img{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include  screen-max-width-991{
+      height: 450px;
+    }
+
+    @include screen-max-width-767 {
+      height: 350px;
+    }
+
+    @include screen-max-width-576 {
+      height: 260px;
+    }
+  }
+
+  .validation-forms{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding: 40px 0;
+    border-top: 1px solid #999999;
+
+    .input{
+      max-width: 900px;
+      width: 100%;
+      height: 80px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #999999;
+      color: #FFFFFF;
+      padding: 10px;
+      align-items: center;
+     &::placeholder{
+       color: #FFFFFF;
+       font-size: 30px;
+     }
+    }
+    .btn-valid{
+      max-width: 900px;
+      width: 100%;
+      height: 90px;
+      display: flex;
+      justify-content: space-between;
+      text-align: end;
+      align-items: end;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #999999;
+      color: #FFFFFF;
+      font-size: 30px;
+      padding: 10px;
+      .up{
+        background: #FFFFFF;
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+}

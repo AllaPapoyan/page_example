@@ -1,0 +1,19 @@
+@import "../../assets/style/variabless";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+.bg-component{
+width: 100%;
+          height: 100vh;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+object-fit: cover;
+  @include screen-max-width-991{
+    height: 70vh;
+  }
+  @include screen-max-width-576{
+    height: 55vh;
+  }
+}

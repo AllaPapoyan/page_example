@@ -1,0 +1,109 @@
+@import "../../assets/style/variabless";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+.our-services{
+  padding: 40px 0;
+  .our-services-container{
+    font-family: $Regular;
+    .services-title{
+      font-size: 95px;
+      font-weight: 700;
+      @include screen-max-width-576{
+        font-size: 60px;
+      }
+
+      @include screen-max-width-320{
+        font-size: 50px;
+      }
+    }
+    .our-services-menu{
+      display: flex;
+      justify-content:normal;
+      list-style-type: none;
+      width: 55%;
+      padding: 40px 0;
+      font-size: 26px;
+      @include screen-max-width-991{
+        flex-wrap: wrap;
+       justify-content: flex-start;
+        width: 60%;
+      }
+      @include screen-max-width-576{
+        width: 100%;
+      }
+      .active{
+        border: 1px solid #FAFAFA;
+        border-radius: 50px;
+        padding: 5px 10px;
+      }
+      .menu-item{
+        padding: 5px 10px;
+      }
+    }
+
+  }
+  .services-list-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: $Regular;
+
+    @include screen-max-width-767 {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+
+    .list-container {
+      width: 420px;
+      height: 420px;
+      background-color: #0E0E0E;
+
+      .img-cont{
+        background-color: #6B55F2;
+        width: 100%;
+        height: 75%;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        @include screen-max-width-991{
+          height: 70%;
+        }
+      }
+      .text-cont{
+        width: 100%;
+        height: 25%;
+        padding: 2%;
+        @include screen-max-width-991{
+          height: 30%;
+        }
+        .cont-title{
+          font-size: 18px;
+          padding: 5px 0;
+        }
+        .cont-desc{
+          font-size: 12px;
+          color: #8590A6;
+          line-height: 1.4;
+        }
+      }
+
+      @include screen-max-width-991{
+        width: 320px;
+        height: 360px;
+      }
+      @include screen-max-width-767{
+        width: 320px;
+        height: 360px;
+      }
+
+      @include screen-max-width-576{
+        height: 320px;
+      }
+
+    }
+  }
+}
