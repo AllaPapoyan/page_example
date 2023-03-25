@@ -15,5 +15,9 @@ object-fit: cover;
   }
   @include screen-max-width-576{
     height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
   }
 }

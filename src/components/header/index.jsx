@@ -4,7 +4,7 @@ import useHeader from "./useHeader";
 import {useEffect} from "react";
 import {NavLink} from "react-router-dom";
 const Header=()=>{
-  const {changeIcon,isChange,setOpen,open,width,setWidth}=useHeader()
+  const {changeIcon,isChange,width,setWidth,isOpen}=useHeader()
 
 
     return(<header className={"header"}>
@@ -12,9 +12,9 @@ const Header=()=>{
             <nav className={"navbar"}>
                 <NavLink style={{textDecoration:"none",color:"#FAFAFA"}} to={"/"}><span className={"icon  group-404-icon logo"}></span></NavLink>
                 <ul className={ !changeIcon ?"menu ":'menuOpen'}>
-                    <li className={"menu-item" }><NavLink style={{textDecoration:"none",color:"#FAFAFA"}} to="/">Courses</NavLink></li>
-                    <li className={"menu-item"}><NavLink style={{textDecoration:"none",color:"#FAFAFA"}} to="/about_us">About Us</NavLink></li>
-                    <li className={"menu-item"}><NavLink style={{textDecoration:"none",color:"#FAFAFA"}} to="/contact">Contact</NavLink></li>
+                    <li className={"menu-item" } onClick={()=>isOpen()}><NavLink  style={{textDecoration:"none",color:"#FAFAFA"}} to="/">Courses</NavLink></li>
+                    <li className={"menu-item"} onClick={()=>isOpen()}><NavLink style={{textDecoration:"none",color:"#FAFAFA"}} to="/about_us">About Us</NavLink></li>
+                    <li className={"menu-item"} onClick={()=>isOpen()}><NavLink style={{textDecoration:"none",color:"#FAFAFA"}} to="/contact">Contact</NavLink></li>
                     <li className={"menu-item-icon"}><IconsComponent /></li>
                 </ul>
             </nav>
